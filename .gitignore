@@ -127,3 +127,25 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+
+
+
+# user
+data/
+assets/
+email/
+test/
+.data/
+.assets/
+.email/
+.test/
+
+app.py
+
+config.json
+DB_FILE*.json
+sourcecode*.*
+
+!app.pyc
