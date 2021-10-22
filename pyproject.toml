@@ -13,6 +13,7 @@ psutil = "^5.8.0"
 aioeos = "^1.0.2"
 cryptography = "^35.0.0"
 grequests = "^0.6.0"
+pyotp = "^2.6.0"
 
 [tool.poetry.dev-dependencies]
 
