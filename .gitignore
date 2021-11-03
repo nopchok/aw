@@ -148,4 +148,6 @@ config.json
 DB_FILE*.json
 sourcecode*.*
 
+poetry.lock
+
 !app.pyc
