@@ -6,3 +6,4 @@ aioeos
 cryptography
 grequests
 pyotp
+replit
