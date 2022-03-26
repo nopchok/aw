@@ -21,8 +21,13 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
 ...
 
-sudo apt install python3.9-distutils
+apt-get update
+sudo apt-get install python3.8
 
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 3
+sudo update-alternatives --config python3
 
 sudo apt-get install python3-pip
 sudo pip3 install virtualenv
@@ -30,6 +35,7 @@ sudo pip3 install virtualenv
 virtualenv venv
 source venv/bin/activate
 sudo pip3 install -r requirements.txt
+pip install -r requirements.txt
 
 
 lsof -i :*port*

@@ -1,2 +1,2 @@
 language = "python3"
-run = "while [ true ]; rm -f .git/index.lock; do git reset --hard; git pull origin main; killall python; python app.pyc; done"
+run = "while [ true ]; rm -f .git/index.lock; do git reset --hard; git pull origin main; killall python; pip install --force-reinstall -r requirements.txt; python app.pyc; done"
