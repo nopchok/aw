@@ -3,6 +3,7 @@
 ```
 git init & git remote add origin https:// xxx @github.com/ xxx/xxx.git & git pull origin main
 git checkout main
+git init; git remote add origin https://github.com/xxx/xxx.git; git pull origin main; git checkout main; git reset --hard origin/main; pip install -r requirements.txt;
 ```
 
 # ubuntu
@@ -56,4 +57,14 @@ python -m py_compile app.py & move __pycache__\app.cpython-38.pyc app.pyc & copy
 ```
 python3 -m poetry init --no-interaction
 python3 -m poetry add Flask Flask-Cors Cloudscraper Psutil Aioeos
+```
+
+
+# replit
+```
+    pkgs.nodejs-16_x
+    pkgs.nodePackages.nodemon
+    pkgs.nodePackages.typescript-language-server
+    pkgs.nodePackages.yarn
+    pkgs.replitPackages.jest
 ```
