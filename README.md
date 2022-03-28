@@ -63,7 +63,6 @@ python3 -m poetry add Flask Flask-Cors Cloudscraper Psutil Aioeos
 # replit
 ```
     pkgs.nodejs-16_x
-    pkgs.nodePackages.nodemon
     pkgs.nodePackages.typescript-language-server
     pkgs.nodePackages.yarn
     pkgs.replitPackages.jest
