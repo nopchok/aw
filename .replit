@@ -1,5 +1,5 @@
 language = "python3"
-run = "rm -f .git/index.lock; git pull origin main --force; git reset --hard; git reset --hard origin/main; ./venv/bin/pip install -r requirements.txt; ./venv/bin/python app.pyc; npm install nodemon; npx nodemon --watch restart.log"
+run = "rm -f .git/index.lock; do npx nodemon -L -x 'git pull origin main --force; git reset --hard; git reset --hard origin/main; ./venv/bin/pip install -r requirements.txt; ./venv/bin/python app.pyc;' --watch restart.log;"
 
 
 [env]
