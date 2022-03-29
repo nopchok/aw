@@ -1,6 +1,5 @@
 language = "python3"
-run = "npm install nodemon; rm -f .git/index.lock; npx nodemon -L -x 'git pull origin main --force; git reset --hard; git reset --hard origin/main; ./venv/bin/pip install -r requirements.txt; ./venv/bin/python app.pyc;' --watch restart.log;"
-
+run = "echo $(date +'%Y/%d/%m_%H:%M:%S START') > restart.log; ./venv/bin/pip install -r requirements.txt; npm install nodemon; npx nodemon -L -x 'rm -f .git/index.lock; git pull origin main --force; git reset --hard origin/main; ./venv/bin/python app.pyc || echo $(date +'%Y/%d/%m_%H:%M:%S CRASH') >> restart.log;' --watch restart.log;"
 
 [env]
 VIRTUAL_ENV = "/home/runner/${REPL_SLUG}/venv"
