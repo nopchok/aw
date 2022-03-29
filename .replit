@@ -1,5 +1,5 @@
 language = "python3"
-run = "while [ true ]; echo $(date +'%Y/%d/%m_%H:%M:%S') > restart.log; npm install nodemon; rm -f .git/index.lock; do npx nodemon -L -x 'git pull origin main --force; git reset --hard; git reset --hard origin/main; ./venv/bin/pip install -r requirements.txt; ./venv/bin/python app.pyc;' --watch restart.log; continue; done"
+run = "rm -f .git/index.lock; git pull origin main --force; git reset --hard; git reset --hard origin/main; ./venv/bin/pip install -r requirements.txt; ./venv/bin/python app.pyc;"
 
 
 [env]
