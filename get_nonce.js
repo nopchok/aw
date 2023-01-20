@@ -29,7 +29,7 @@ const mine = (account, mine_tx, dificult, good_nonce) => {
     input.set(fromHexString(nameToHex(account) + mine_tx.slice(0, 16)));
     let n = 0;
     let h = '';
-    const end_time = +new Date() + 60000;
+    const end_time = +new Date() + 300000;
     while (1) {
         if (good_nonce == 2) {
             nonce = new Uint8Array([0, 0, 0, 0, 0].concat([...Array(3)].map(n => parseInt(Math.floor(Math.random() * 255)))));
